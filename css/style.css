@@ -86,7 +86,7 @@ header{
     text-align: center;
 }
 .dondecomprar-main{
-    padding: 80px 5%;
+   padding: 80px 5%;
 }
 .section-dondecomprar{
     padding: 10px 10%;
@@ -346,6 +346,21 @@ input:focus{
         flex-direction: column;
         align-items: center;
     }
+    .section-dondecomprar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .section-dondecomprar img{
+        width: 200px;
+        height: 140px;
+        object-fit: cover;  
+    }
+    .section-dondecomprar article{
+        background: none;
+    }
     
 
 }
@@ -377,15 +392,27 @@ input:focus{
         align-items: center;
 
         }
-     }
-
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-dondecomprar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .section-dondecomprar img{
+            width: 200px;
+            height: 140px;
+            object-fit: cover;  
+        }
+        .section-dondecomprar article{
+            background: none;
+        }
+}
 
 
 @media(max-width:375px)
@@ -421,6 +448,22 @@ input:focus{
         flex-direction: column;
         align-items: center;
     }
+    .section-dondecomprar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .section-dondecomprar img{
+        width: 200px;
+        height: 140px;
+        object-fit: cover;  
+    }
+    .section-dondecomprar article{
+        background: none;
+    }
+
 }
 
 
