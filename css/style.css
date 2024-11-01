@@ -402,9 +402,8 @@ input:focus{
 @media(max-width:476px)
 {   
     header{
-        background: none;
-        height: 10px;
-        background-color: rgb(180, 67, 59);
+        width: auto;
+        height: 350px;
     }
     .navbar ul a{
         display: flex;
@@ -470,9 +469,8 @@ input:focus{
 @media(max-width:375px)
 {
     header{
-        background: none;
-        height: 10px;
-        background-color: rgb(180, 67, 59);
+        width: auto;
+        height: 350px;
     }
     .navbar ul a{
         display: flex;
