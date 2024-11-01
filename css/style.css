@@ -14,6 +14,7 @@ header{
     background: url("../assets/img/header.jpeg");
     background-position: 50%;
     background-repeat: none;
+    width: auto;
     height: 400px;
     overflow: hidden;
     padding: 80px 10px;
@@ -22,13 +23,13 @@ header{
     background-color: grey;
     display: flex;
     list-style: none;
-    gap: .625rem;
+    text-align: center;
     justify-content: center;
 }
 
 .navbar a{
     color: black;
-    padding: 14px;
+   padding: 10px;
     text-decoration: none;
 }
 .main img{
@@ -37,13 +38,15 @@ header{
     object-fit: cover;
 }
 .section-principal{
-    width: 100%;
+    width: auto;
     height: 300px;
     background-color: white;
     display: flex;
     flex-direction: row;
-    padding: 80px 20%;
+    padding: 80px 80px;
     align-items: center;
+   justify-content: center;
+
 }
 .section-principal img{
     width: 50px;
@@ -122,6 +125,7 @@ header{
 .section-quienesomos{
     padding: 80px 5%;   
     display: flex;
+    flex-direction: row;
 }
 .section-quienesomos div{
     width: 800px;
@@ -330,7 +334,6 @@ input:focus{
 @media(max-width:768px)
 {
     
-
     .navbar ul a{
         display: flex;
         flex-direction: column;
@@ -354,12 +357,44 @@ input:focus{
         align-items: center;
     }
     .section-dondecomprar img{
-        width: 200px;
-        height: 140px;
-        object-fit: cover;  
+        width: auto;
+        height: auto;
     }
     .section-dondecomprar article{
         background: none;
+        width: 100%;
+        height: auto;
+    }
+    .main img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .section-principal div{
+        width: auto;
+        height: 300px;
+        padding: 40px 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-article img{
+        width: 100%;
+        height: auto;
+        object-fit:contain;
+    }
+    .section-quienesomos{
+        padding: 80px 5%;   
+        display: flex;
+        flex-direction: column;
+    }
+    .section-quienesomos div{
+        width: auto;
+        height: auto;
     }
     
 
@@ -382,7 +417,7 @@ input:focus{
         justify-content: center;
         justify-items: center;
         align-items: center;
-    }
+        }
     .section-productos{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -390,7 +425,6 @@ input:focus{
         justify-content: center;
         justify-items: center;
         align-items: center;
-
         }
         form{
             display: flex;
@@ -400,20 +434,38 @@ input:focus{
         .section-dondecomprar{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
+            text-align: center;
         }
         .section-dondecomprar img{
-            width: 200px;
-            height: 140px;
-            object-fit: cover;  
+            width: auto;
+            height: auto;
         }
         .section-dondecomprar article{
             background: none;
+            width: 100%;
+            height: auto;
         }
-}
-
+        .art-dondecomprar div p h3{
+            text-align: center;
+        }
+        .section-principal{
+            width: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .section-quienesomos{
+            padding: 80px 5%;   
+            display: flex;
+            flex-direction: column;
+        }
+        .section-quienesomos div{
+            width: auto;
+            height: auto;
+        }
+    }
 
 @media(max-width:375px)
 {
@@ -438,9 +490,7 @@ input:focus{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,60px);
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
+
         }
 
     form{
@@ -451,18 +501,39 @@ input:focus{
     .section-dondecomprar{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
+        text-align: center;
+
     }
     .section-dondecomprar img{
-        width: 200px;
-        height: 140px;
-        object-fit: cover;  
+        width: auto;
+        height: auto; 
     }
     .section-dondecomprar article{
         background: none;
+        width: 100%;
+        height: auto;
     }
+    .art-dondecomprar div p h3{
+        text-align: center;
+    }
+    .section-principal{
+        width: auto;
+        height: 50%;
+        display: flex;
+        flex-direction: colusmn;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-quienesomos{
+        padding: 80px 5%;   
+        display: flex;
+        flex-direction: column;
+    }
+    .section-quienesomos div{
+        width: auto;
+        height: auto;
+    }
+
 
 }
 
