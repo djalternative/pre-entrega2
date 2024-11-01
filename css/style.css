@@ -22,15 +22,22 @@ header{
 .navbar{
     background-color: grey;
     display: flex;
-    list-style: none;
+    flex-direction: row;
     text-align: center;
     justify-content: center;
 }
 
 .navbar a{
     color: black;
-   padding: 10px;
+    padding: 10px 10px;
     text-decoration: none;
+    list-style: none;
+}
+.navbar ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 .main img{
     width: 100%;
@@ -334,7 +341,7 @@ input:focus{
 @media(max-width:768px)
 {
     
-    .navbar ul a{
+    .navbar ul{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -405,7 +412,7 @@ input:focus{
         width: auto;
         height: 350px;
     }
-    .navbar ul a{
+    .navbar ul{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -472,7 +479,7 @@ input:focus{
         width: auto;
         height: 350px;
     }
-    .navbar ul a{
+    .navbar ul{
         display: flex;
         flex-direction: column;
         align-items: center;
